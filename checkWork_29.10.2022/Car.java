@@ -7,11 +7,11 @@ abstract class Car {
     protected int currentSpeed;
     protected int currentPrice;
 
-    public void start() {};
-    public void stop() {};
-    public void accelerate(int speed) {};
+    protected void start() {};
+    protected void stop() {};
+    protected void accelerate(int speed) {};
 
-    public int getPrice(){
+    protected int getPrice(){
         return this.currentPrice;
     }
 }

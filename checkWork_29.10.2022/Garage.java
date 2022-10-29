@@ -1,14 +1,11 @@
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class Garage {
-    private int maxCap;
+    private final int maxCap;
     private int fordCount;
     private int ferrariCount;
 
-    private ArrayList<Car> carArrayList = new ArrayList<>();
+    private final ArrayList<Car> carArrayList = new ArrayList<>();
 
     public Garage(int maxCap) {
         this.maxCap = maxCap;
@@ -18,6 +15,8 @@ public class Garage {
         if (carArrayList.size() < maxCap){
             this.carArrayList.add(ferrari);
             this.ferrariCount += 1;
+        }else{
+            System.out.println("В гараже нет места");
         }
 
     }
@@ -27,14 +26,19 @@ public class Garage {
             this.carArrayList.add(ford);
             this.fordCount += 1;
         }
+        else{
+            System.out.println("В гараже нет места");
+        }
     }
 
     public void getCars() {
-        Collections.sort(carArrayList, new MyComp());
+        carArrayList.sort(new MyComp());
 
         for (Car car:carArrayList) {
             System.out.println("Автомобиль "+car.modelName +" за "+ car.currentPrice);
         }
+        System.out.println("\nВсего машин марки Ford: "+fordCount);
+        System.out.println("Всего машин марки Ferrari: "+ferrariCount);
     }
 
 }
