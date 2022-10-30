@@ -119,25 +119,34 @@ public class Main {
     public static void task_8(){
         System.out.println("\nTASK8");
 
-//        CashMachine cashMachine = new CashMachine();
-//        PaymentTerminal paymentTerminal = new PaymentTerminal();
-//        PhoneApp phoneApp = new PhoneApp();
-//
-//        SocialCard socialCard = new SocialCard();
-//        SchoolCard schoolCard = new SchoolCard();
-//        StudentCard studentCard = new StudentCard();
-//
-//        cashMachine.coopWithSubDate(socialCard, 200.0f);
-//        paymentTerminal.initCard(socialCard);
-//
-//        cashMachine.coopWithCardBalance(schoolCard, 800.0f);
-//        paymentTerminal.initCard(schoolCard);
-//        paymentTerminal.initCard(schoolCard);
-//        paymentTerminal.initCard(schoolCard);
-//        paymentTerminal.info();
-//
-//        cashMachine.coopWithSubDate(studentCard, 600.0f);
-//        paymentTerminal.initCard(studentCard);
-//        paymentTerminal.info();
+        ATM atm = new ATM();
+        Validator validator = new Validator();
+        App app = new App();
+
+        SocialCard socialCard = new SocialCard();
+        SchoolCard schoolCard = new SchoolCard();
+        StudentCard studentCard = new StudentCard();
+
+        // Покупка поездок и счёта по социальной карте через банкомат и приложение
+        atm.initRideAdd(socialCard, 1000.0f);
+        app.initMoneyAdd(socialCard, 500);
+        // Прохождение через валидатор
+        validator.initCard(socialCard);
+        validator.initCard(socialCard);
+
+        // Пополнение счёта по школьной карте через банкомат
+        atm.initMoneyAdd(schoolCard, 1000.0f);
+        // Прохождение через валидатор
+        validator.initCard(schoolCard);
+        validator.initCard(schoolCard);
+
+        // Покупка подписки по студенческой карте через банкомат
+        atm.initSubOperation(studentCard, 300);
+        // Прохождение через валидатор
+        validator.initCard(studentCard);
+        validator.initCard(studentCard);
+
+        // Статистика валидатора
+        validator.getGlobalStatistic();
     }
 }
