@@ -1,0 +1,2089 @@
+{
+	"info": {
+		"_postman_id": "24144516-056d-4e96-a280-58a37e7bad8d",
+		"name": "train_restfull",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26663776"
+	},
+	"item": [
+		{
+			"name": "type",
+			"item": [
+				{
+					"name": "localhost:8080/types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/types",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/types",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/types",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"types"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:20:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Скоростной\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Дальнего следования\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Товарный\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Пригородный\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/types/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/types/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/types/5",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/types/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"types",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:21:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Скоростной\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/types/name/Скоростной",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/types/name/Скоростной",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"name",
+								"Скоростной"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/types/name/Скоростной",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/types/name/Скоростной",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"types",
+										"name",
+										"Скоростной"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:22:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Скоростной\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/types/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Сапсан\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/types/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/types/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Сапсан\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/types/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"types",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:22:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/types/8",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Сапсан\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/types/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/types/8",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Сапсан\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/types/8",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"types",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:24:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/types/7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Пригородный\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/types/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/types/7",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Пригородный\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/types/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"types",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:25:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "city",
+			"item": [
+				{
+					"name": "localhost:8080/cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cities",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cities",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:26:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 7,\n        \"name\": \"Москва\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Санкт-Петербург\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Казань\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Нижний Новгород\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Краснодар\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/11",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/cities/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/11",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/cities/11",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:26:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 11,\n    \"name\": \"Краснодар\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/name/Москва",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cities/name/Москва",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"name",
+								"Москва"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/name/Москва",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cities/name/Москва",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"name",
+										"Москва"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 00:53:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 7,\n        \"name\": \"Москва\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Новосибирск\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Новосибирск\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:27:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/15",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/15",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"15"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/15",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/15",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"15"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:28:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/11",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Саранск\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/11",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Саранск\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/11",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:29:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "train",
+			"item": [
+				{
+					"name": "localhost:8080/trains",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Москва-Казань\",\r\n    \"number\": 111,\r\n    \"typeId\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trains",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Москва-Казань\",\r\n    \"number\": 111,\r\n    \"typeId\": 6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trains",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:18:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 10,\n        \"name\": \"Москва-Казань\",\n        \"number\": 111,\n        \"typeId\": 6\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/10",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:19:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"name\": \"Москва-Казань\",\n    \"number\": 111,\n    \"typeId\": 6\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/name/Москва-Казань",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/name/Москва-Казань",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"name",
+								"Москва-Казань"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/name/Москва-Казань",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/name/Москва-Казань",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"name",
+										"Москва-Казань"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:20:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 10,\n        \"name\": \"Москва-Казань\",\n        \"number\": 111,\n        \"typeId\": 6\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/number/111",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/type/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"type",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/number/111",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/number/111",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"number",
+										"111"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:22:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 10,\n        \"name\": \"Москва-Казань\",\n        \"number\": 111,\n        \"typeId\": 6\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Москва-Саранск\",\r\n    \"number\": 42,\r\n    \"type\": {\r\n        \"id\": 5,\r\n        \"name\": \"Скоростной\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trains/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Москва-Саранск\",\r\n    \"number\": 42,\r\n    \"type\": {\r\n        \"id\": 5,\r\n        \"name\": \"Скоростной\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trains/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:15:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/11",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Москва-Саранск Фирменный\",\r\n    \"number\": 42,\r\n    \"type\": {\r\n        \"id\": 5,\r\n        \"name\": \"Скоростной\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trains/12",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"12"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/11",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Москва-Саранск Фирменный\",\r\n    \"number\": 42,\r\n    \"type\": {\r\n        \"id\": 5,\r\n        \"name\": \"Скоростной\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trains/12",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:17:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/14",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/14",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"14"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/14",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/14",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"14"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:35:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "schedule",
+			"item": [
+				{
+					"name": "localhost:8080/schedules",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 15:26:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"2023-03-31T17:29:39.208913\",\n        \"endTime\": \"2023-03-31T17:29:39.208913\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 15:27:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"cityFrom\": {\n        \"id\": 7,\n        \"name\": \"Москва\"\n    },\n    \"cityTo\": {\n        \"id\": 7,\n        \"name\": \"Москва\"\n    },\n    \"train\": {\n        \"id\": 10,\n        \"name\": \"Москва-Казань\",\n        \"number\": 666,\n        \"typeId\": 5\n    },\n    \"startTime\": \"2023-03-31T17:29:39.208913\",\n    \"endTime\": \"2023-03-31T17:29:39.208913\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/from/7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules/from/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"from",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/from/7",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules/from/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"from",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 15:28:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"2023-03-31T17:29:39.208913\",\n        \"endTime\": \"2023-03-31T17:29:39.208913\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/to/7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules/to/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"to",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/to/7",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules/to/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"to",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 15:29:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"2023-03-31T17:29:39.208913\",\n        \"endTime\": \"2023-03-31T17:29:39.208913\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/train/10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules/train/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"train",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/train/10",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules/train/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"train",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 15:29:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"2023-03-31T17:29:39.208913\",\n        \"endTime\": \"2023-03-31T17:29:39.208913\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/start/2023-03-31 20:25:00",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules/start/2023-03-31 20:25:00",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"start",
+								"2023-03-31 20:25:00"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/start/2023-03-31 20:25:00",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules/start/2023-03-31 20:25:00",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"start",
+										"2023-03-31 20:25:00"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 17:59:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 6,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 7,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 8,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 9,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/end/2023-04-01 20:25:00",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules/end/2023-04-01 20:25:00",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"end",
+								"2023-04-01 20:25:00"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/end/2023-04-01 20:25:00",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules/end/2023-04-01 20:25:00",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"end",
+										"2023-04-01 20:25:00"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:01:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 6,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 7,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 8,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    },\n    {\n        \"id\": 9,\n        \"cityFrom\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 7,\n            \"name\": \"Москва\"\n        },\n        \"train\": {\n            \"id\": 10,\n            \"name\": \"Москва-Казань\",\n            \"number\": 666,\n            \"typeId\": 5\n        },\n        \"startTime\": \"31.03.2023 20:25\",\n        \"endTime\": \"01.04.2023 20:25\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cityFrom\": {\r\n            \"id\": 7\r\n        },\r\n        \"cityTo\": {\r\n            \"id\": 7\r\n        },\r\n        \"train\": {\r\n            \"id\": 10\r\n        },\r\n        \"startTime\": \"31.03.2023 20:25\",\r\n        \"endTime\": \"01.04.2023 20:25\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/schedules/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"cityFrom\": {\r\n            \"id\": 7\r\n        },\r\n        \"cityTo\": {\r\n            \"id\": 7\r\n        },\r\n        \"train\": {\r\n            \"id\": 10\r\n        },\r\n        \"startTime\": \"31.03.2023 20:25\",\r\n        \"endTime\": \"01.04.2023 20:25\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/schedules/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:36:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cityFrom\": {\r\n            \"id\": 7\r\n        },\r\n        \"cityTo\": {\r\n            \"id\": 7\r\n        },\r\n        \"train\": {\r\n            \"id\": 10\r\n        },\r\n        \"startTime\": \"31.03.2023 11:00\",\r\n        \"endTime\": \"31.04.2023 13:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/schedules/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/3",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"cityFrom\": {\r\n            \"id\": 7\r\n        },\r\n        \"cityTo\": {\r\n            \"id\": 7\r\n        },\r\n        \"train\": {\r\n            \"id\": 10\r\n        },\r\n        \"startTime\": \"31.03.2023 11:00\",\r\n        \"endTime\": \"31.04.2023 13:00\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/schedules/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:36:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/schedules/4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/schedules/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schedules",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/schedules/4",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/schedules/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"schedules",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 18:35:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}

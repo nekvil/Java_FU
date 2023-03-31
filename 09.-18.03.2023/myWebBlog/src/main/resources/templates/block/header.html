@@ -1,0 +1,10 @@
+  <div th:fragment="header">
+    <h3 class="float-md-start mb-0">
+        <p><a th:href="@{/}" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">fomchv</a></p>
+    </h3>
+    <nav class="nav nav-masthead justify-content-center float-md-end">
+      <a  th:classappend="${#strings.equals(activeLink,'/')? 'active' : ''}" class="nav-link fw-bold py-1 px-0" aria-current="page" th:href="@{/}">лента</a>
+      <a th:classappend="${#strings.equals(activeLink,'/about')? 'active' : ''}" class="nav-link fw-bold py-1 px-0" th:href="@{/about}">о проекте</a>
+      <a th:classappend="${#strings.equals(activeLink,'/login')? 'active' : ''}" class="nav-link fw-bold py-1 px-0" th:href="@{/login}">вход</a>
+    </nav>
+  </div>

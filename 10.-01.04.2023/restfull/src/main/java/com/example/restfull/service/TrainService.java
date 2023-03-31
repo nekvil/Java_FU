@@ -1,0 +1,44 @@
+package com.example.restfull.service;
+
+import com.example.restfull.model.Train;
+import com.example.restfull.repository.TrainRepository;
+import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@Transactional
+public class TrainService {
+    @Autowired
+    private TrainRepository trainRepository;
+
+    public List<Train> getAllTrains(){
+        return trainRepository.findAll();
+    }
+
+    public List<Train> getTrainByName(String name){
+        return trainRepository.findByName(name);
+    }
+
+    public List<Train> getTrainByNumber(int number){
+        return trainRepository.findByNumber(number);
+    }
+
+    public List<Train> getTrainByTypeId(int type){
+        return trainRepository.findByTypeId(type);
+    }
+
+    public void saveTrain(Train train){
+        trainRepository.save(train);
+    }
+
+    public void deleteTrain(Integer id){
+        trainRepository.deleteById(id);
+    }
+
+    public Train getTrainById(Integer id){
+        return trainRepository.findById(id).orElse(null);
+    }
+}
