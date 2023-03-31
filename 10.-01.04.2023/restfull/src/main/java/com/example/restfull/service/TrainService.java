@@ -22,7 +22,7 @@ public class TrainService {
         return trainRepository.findByName(name);
     }
 
-    public List<Train> getTrainByNumber(int number){
+    public List<Train> getTrainByNumber(String number){
         return trainRepository.findByNumber(number);
     }
 

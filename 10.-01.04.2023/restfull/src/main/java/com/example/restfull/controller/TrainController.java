@@ -38,7 +38,7 @@ public class TrainController {
     }
 
     @GetMapping("/number/{number}")
-    public List<Train> getByNumber(@PathVariable int number){
+    public List<Train> getByNumber(@PathVariable String number){
         return trainService.getTrainByNumber(number);
     }
 

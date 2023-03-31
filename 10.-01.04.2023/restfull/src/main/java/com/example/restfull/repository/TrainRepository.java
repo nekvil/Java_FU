@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface TrainRepository extends JpaRepository<Train, Integer> {
         List<Train> findByName(String name);
-        List<Train> findByNumber(int number);
+        List<Train> findByNumber(String number);
         List<Train> findByTypeId(int type);
 }

@@ -13,8 +13,7 @@ public class Train {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String name;
-    private int number;
+    private String name, number;
 
     @ManyToOne
     @JoinColumn(name="typeId", nullable = false)
@@ -31,7 +30,7 @@ public class Train {
         if(train.type != null){
             this.type = train.type;
         }
-        if(train.number != 0){
+        if(train.number != null){
             this.number = train.number;
         }
     }
