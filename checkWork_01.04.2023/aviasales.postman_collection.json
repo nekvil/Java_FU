@@ -1,0 +1,1118 @@
+{
+	"info": {
+		"_postman_id": "dc1125fa-96a9-4c8a-acb3-126233cf587b",
+		"name": "aviasales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26663776"
+	},
+	"item": [
+		{
+			"name": "city",
+			"item": [
+				{
+					"name": "localhost:8080/cities/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Нижний Новгород\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Нижний Новгород\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:05:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cities",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cities",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:06:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Саранск\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Москва\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Санкт-Петербург\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Казань\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Краснодар\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Новосибирск\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Нижний Новгород\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cities/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cities/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:07:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Саранск\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Екатеринбург\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/7",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Екатеринбург\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:08:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/7",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Екатеринбург\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/7",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Екатеринбург\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:09:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "route",
+			"item": [
+				{
+					"name": "localhost:8080/routes/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityFrom\": {\r\n        \"id\": 5\r\n    },\r\n    \"cityTo\": {\r\n        \"id\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/routes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"routes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/routes/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cityFrom\": {\r\n        \"id\": 5\r\n    },\r\n    \"cityTo\": {\r\n        \"id\": 6\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/routes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"routes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:12:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/routes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/routes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"routes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/routes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/routes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"routes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:13:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityFrom\": {\n            \"id\": 1,\n            \"name\": \"Саранск\"\n        },\n        \"cityTo\": {\n            \"id\": 2,\n            \"name\": \"Москва\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"cityFrom\": {\n            \"id\": 3,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"cityTo\": {\n            \"id\": 4,\n            \"name\": \"Казань\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"cityFrom\": {\n            \"id\": 2,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 3,\n            \"name\": \"Санкт-Петербург\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"cityFrom\": {\n            \"id\": 4,\n            \"name\": \"Казань\"\n        },\n        \"cityTo\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        }\n    },\n    {\n        \"id\": 5,\n        \"cityFrom\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"cityTo\": {\n            \"id\": 6,\n            \"name\": \"Новосибирск\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/routes/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/routes/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"routes",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/routes/3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/routes/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"routes",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:14:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"cityFrom\": {\n        \"id\": 2,\n        \"name\": \"Москва\"\n    },\n    \"cityTo\": {\n        \"id\": 3,\n        \"name\": \"Санкт-Петербург\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/routes/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityFrom\": {\r\n        \"id\": 2\r\n    },\r\n    \"cityTo\": {\r\n        \"id\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/routes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"routes",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/routes/1",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cityFrom\": {\r\n        \"id\": 2\r\n    },\r\n    \"cityTo\": {\r\n        \"id\": 6\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/routes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"routes",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:16:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/routes/5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityFrom\": {\r\n        \"id\": 2\r\n    },\r\n    \"cityTo\": {\r\n        \"id\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/routes/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"routes",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/routes/5",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cityFrom\": {\r\n        \"id\": 2\r\n    },\r\n    \"cityTo\": {\r\n        \"id\": 6\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/routes/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"routes",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:17:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "flight",
+			"item": [
+				{
+					"name": "localhost:8080/flights/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"routeId\":{\r\n        \"id\": 3\r\n    },\r\n    \"aviaName\": \"USA Airlines\",\r\n    \"dateTime\": \"04.04.2023 04:00\",\r\n    \"duration\": 40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/flights/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flights",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/flights/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"routeId\":{\r\n        \"id\": 3\r\n    },\r\n    \"aviaName\": \"USA Airlines\",\r\n    \"dateTime\": \"04.04.2023 04:00\",\r\n    \"duration\": 40\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/flights/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"flights",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:25:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/flights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/flights",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flights"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/flights",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/flights",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"flights"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:26:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"aviaName\": \"поБеда\",\n        \"duration\": 120,\n        \"dateTime\": \"01.04.2023 10:00\",\n        \"routeId\": {\n            \"id\": 1,\n            \"cityFrom\": {\n                \"id\": 2,\n                \"name\": \"Москва\"\n            },\n            \"cityTo\": {\n                \"id\": 6,\n                \"name\": \"Новосибирск\"\n            }\n        }\n    },\n    {\n        \"id\": 2,\n        \"aviaName\": \"Qatar Airlines\",\n        \"duration\": 60,\n        \"dateTime\": \"02.04.2023 13:00\",\n        \"routeId\": {\n            \"id\": 2,\n            \"cityFrom\": {\n                \"id\": 3,\n                \"name\": \"Санкт-Петербург\"\n            },\n            \"cityTo\": {\n                \"id\": 4,\n                \"name\": \"Казань\"\n            }\n        }\n    },\n    {\n        \"id\": 3,\n        \"aviaName\": \"China AirLines\",\n        \"duration\": 100,\n        \"dateTime\": \"03.04.2023 16:00\",\n        \"routeId\": {\n            \"id\": 3,\n            \"cityFrom\": {\n                \"id\": 2,\n                \"name\": \"Москва\"\n            },\n            \"cityTo\": {\n                \"id\": 3,\n                \"name\": \"Санкт-Петербург\"\n            }\n        }\n    },\n    {\n        \"id\": 4,\n        \"aviaName\": \"USA Airlines\",\n        \"duration\": 40,\n        \"dateTime\": \"04.04.2023 04:00\",\n        \"routeId\": {\n            \"id\": 3,\n            \"cityFrom\": {\n                \"id\": 2,\n                \"name\": \"Москва\"\n            },\n            \"cityTo\": {\n                \"id\": 3,\n                \"name\": \"Санкт-Петербург\"\n            }\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/flights/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/flights/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flights",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/flights/3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/flights/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"flights",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:27:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"aviaName\": \"China AirLines\",\n    \"duration\": 100,\n    \"dateTime\": \"03.04.2023 16:00\",\n    \"routeId\": {\n        \"id\": 3,\n        \"cityFrom\": {\n            \"id\": 2,\n            \"name\": \"Москва\"\n        },\n        \"cityTo\": {\n            \"id\": 3,\n            \"name\": \"Санкт-Петербург\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/flights/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aviaName\": \"Авиакомпания Победа\",\r\n    \"duration\": 160,\r\n    \"dateTime\": \"01.04.2023 16:00\",\r\n    \"routeId\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/flights/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flights",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/flights/1",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"aviaName\": \"Авиакомпания Победа\",\r\n    \"duration\": 160,\r\n    \"dateTime\": \"01.04.2023 16:00\",\r\n    \"routeId\": {\r\n        \"id\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/flights/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"flights",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:32:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/flights/4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aviaName\": \"Авиакомпания Победа\",\r\n    \"duration\": 160,\r\n    \"dateTime\": \"01.04.2023 16:00\",\r\n    \"routeId\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/flights/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flights",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/flights/4",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"aviaName\": \"Авиакомпания Победа\",\r\n    \"duration\": 160,\r\n    \"dateTime\": \"01.04.2023 16:00\",\r\n    \"routeId\": {\r\n        \"id\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/flights/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"flights",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:31:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
