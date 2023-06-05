@@ -1,0 +1,6 @@
+module:com.example.traintripfx
+com.example.traintripfx
+com.example.traintripfx.controller
+com.example.traintripfx.http
+com.example.traintripfx.model
+com.example.traintripfx.view

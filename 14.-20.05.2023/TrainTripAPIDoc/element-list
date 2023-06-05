@@ -1,0 +1,5 @@
+com.example.TrainTripAPI
+com.example.TrainTripAPI.controller
+com.example.TrainTripAPI.model
+com.example.TrainTripAPI.repository
+com.example.TrainTripAPI.service

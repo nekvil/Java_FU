@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.TrainTripAPI"},{"l":"com.example.TrainTripAPI.controller"},{"l":"com.example.TrainTripAPI.model"},{"l":"com.example.TrainTripAPI.repository"},{"l":"com.example.TrainTripAPI.service"}];updateSearchResults();
