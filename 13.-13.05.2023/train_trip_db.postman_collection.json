@@ -1,0 +1,2523 @@
+{
+	"info": {
+		"_postman_id": "3aad8fe1-724b-46b3-b29f-e1078f205923",
+		"name": "train_trip_db",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26663776"
+	},
+	"item": [
+		{
+			"name": "city",
+			"item": [
+				{
+					"name": "localhost:8080/cities/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Нижний Новгород\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Нижний Новгород\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:10:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cities",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cities",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:11:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Москва\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Санкт-Петербург\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Казань\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Саранск\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Нижний Новгород\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/cities/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/cities/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:12:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Москва\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/name/Москва",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cities/name/Москва",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"name",
+								"Москва"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/name/Москва",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cities/name/Москва",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"name",
+										"Москва"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:13:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Москва\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Краснодар\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/5",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Краснодар\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:16:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/cities/6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cities/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cities",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/cities/6",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cities/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cities",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:15:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "train_type",
+			"item": [
+				{
+					"name": "localhost:8080/train_types/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Пассажирский\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/train_types/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train_types",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/train_types/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Пассажирский\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/train_types/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"train_types",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:19:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/train_types/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/train_types",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train_types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/train_types/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/train_types",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"train_types"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:20:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Скоростной\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Товарный\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Пригородный\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Сапсан\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Пассажирский\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/train_types/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/train_types/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train_types",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/train_types/5",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/train_types/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"train_types",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:21:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Пассажирский\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/train_types/name/Скоростной",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/train_types/name/Скоростной",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train_types",
+								"name",
+								"Скоростной"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/train_types/name/Скоростной",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/train_types/name/Скоростной",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"train_types",
+										"name",
+										"Скоростной"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:21:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Скоростной\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/train_types/6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/train_types/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train_types",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/train_types/6",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Test2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/train_types/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"train_types",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:33:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/train_types/6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Сапсан\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/train_types/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train_types",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/train_types/6",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Сапсан\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/train_types/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"train_types",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 09:38:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "train",
+			"item": [
+				{
+					"name": "localhost:8080/trains/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Москва — Санкт-Петербург\",\r\n    \"number\": \"760А «САПСАН»\",\r\n    \"trainTypeId\": {\r\n        \"id\": 1\r\n    },\r\n    \"carCount\": 10,\r\n    \"seatsPerCar\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trains/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Москва — Нижний Новгород\",\r\n    \"number\": \"703Ч «ЛАСТОЧКА»\",\r\n    \"trainTypeId\": {\r\n        \"id\": 1\r\n    },\r\n    \"carCount\": 16,\r\n    \"seatsPerCar\": 60\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trains/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 13:54:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Москва-Казань\",\r\n    \"number\": 111,\r\n    \"typeId\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trains",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Москва-Казань\",\r\n    \"number\": 111,\r\n    \"typeId\": 6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trains",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 13:56:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Москва — Нижний Новгород\",\n        \"number\": \"703Ч «ЛАСТОЧКА»\",\n        \"carCount\": 16,\n        \"seatsPerCar\": 60,\n        \"trainTypeId\": {\n            \"id\": 1,\n            \"name\": \"Скоростной\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Москва-Саранск\",\n        \"number\": \"042Й «Мордовия»\",\n        \"carCount\": 16,\n        \"seatsPerCar\": 60,\n        \"trainTypeId\": {\n            \"id\": 5,\n            \"name\": \"Дальнего следования\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Москва-Казань\",\n        \"number\": \"026Г «Италмас (двухэтажный состав)»\",\n        \"carCount\": 16,\n        \"seatsPerCar\": 60,\n        \"trainTypeId\": {\n            \"id\": 5,\n            \"name\": \"Дальнего следования\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Москва — Краснодар\",\n        \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n        \"carCount\": 16,\n        \"seatsPerCar\": 60,\n        \"trainTypeId\": {\n            \"id\": 5,\n            \"name\": \"Дальнего следования\"\n        }\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Москва — Санкт-Петербург\",\n        \"number\": \"760А «САПСАН»\",\n        \"carCount\": 10,\n        \"seatsPerCar\": 30,\n        \"trainTypeId\": {\n            \"id\": 1,\n            \"name\": \"Скоростной\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/17",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/17",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"17"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 22:34:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 17,\n    \"name\": \"Москва — Санкт-Петербург\",\n    \"number\": \"760А «САПСАН»\",\n    \"type\": {\n        \"id\": 5,\n        \"name\": \"Скоростной\"\n    }\n}"
+						},
+						{
+							"name": "localhost:8080/trains/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 13:57:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Москва — Нижний Новгород\",\n    \"number\": \"703Ч «ЛАСТОЧКА»\",\n    \"carCount\": 16,\n    \"seatsPerCar\": 60,\n    \"trainTypeId\": {\n        \"id\": 1,\n        \"name\": \"Скоростной\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/name/Москва — Санкт-Петербург",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/name/Москва — Санкт-Петербург",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"name",
+								"Москва — Санкт-Петербург"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/name/Москва — Санкт-Петербург",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/name/Москва — Санкт-Петербург",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"name",
+										"Москва — Санкт-Петербург"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 13:59:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Москва — Санкт-Петербург\",\n        \"number\": \"760А «САПСАН»\",\n        \"carCount\": 10,\n        \"seatsPerCar\": 30,\n        \"trainTypeId\": {\n            \"id\": 1,\n            \"name\": \"Скоростной\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/number/760А «САПСАН»",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/number/760А «САПСАН»",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"number",
+								"760А «САПСАН»"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/number/760А «САПСАН»",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/number/760А «САПСАН»",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"number",
+										"760А «САПСАН»"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 13:59:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Москва — Санкт-Петербург\",\n        \"number\": \"760А «САПСАН»\",\n        \"carCount\": 10,\n        \"seatsPerCar\": 30,\n        \"trainTypeId\": {\n            \"id\": 1,\n            \"name\": \"Скоростной\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test2\",\r\n    \"number\": \"test2\",\r\n    \"trainTypeId\": {\r\n        \"id\": 1\r\n    },\r\n    \"carCount\": 10,\r\n    \"seatsPerCar\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trains/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/16",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Москва — Казань\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trains/16",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"16"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 22:41:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "localhost:8080/trains/6",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"test2\",\r\n    \"number\": \"test2\",\r\n    \"trainTypeId\": {\r\n        \"id\": 1\r\n    },\r\n    \"carCount\": 10,\r\n    \"seatsPerCar\": 30\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trains/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:01:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trains/6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trains/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trains",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trains/6",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trains/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trains",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:01:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "trip",
+			"item": [
+				{
+					"name": "localhost:8080/trips/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"trainId\": {\r\n            \"id\": 5\r\n        },\r\n        \"departureCity\": {\r\n            \"id\": 1\r\n        },\r\n        \"arrivalCity\": {\r\n            \"id\": 2\r\n        },\r\n        \"departureDate\": \"21.04.2023\",\r\n        \"arrivalDate\": \"22.04.2023\",\r\n        \"departureTime\": \"10:35\",\r\n        \"arrivalTime\": \"14:25\",\r\n        \"totalSeats\": 444,\r\n        \"availableSeats\": 111,\r\n        \"basePrice\": 7799.99\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trips/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"trainId\": {\r\n            \"id\": 5\r\n        },\r\n        \"departureCity\": {\r\n            \"id\": 1\r\n        },\r\n        \"arrivalCity\": {\r\n            \"id\": 2\r\n        },\r\n        \"departureDate\": \"21.04.2023\",\r\n        \"arrivalDate\": \"22.04.2023\",\r\n        \"departureTime\": \"10:35\",\r\n        \"arrivalTime\": \"14:25\",\r\n        \"totalSeats\": 444,\r\n        \"availableSeats\": 111,\r\n        \"basePrice\": 7799.99\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trips/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:15:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:16:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"trainId\": {\n            \"id\": 1,\n            \"name\": \"Москва — Нижний Новгород\",\n            \"number\": \"703Ч «ЛАСТОЧКА»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 7,\n            \"name\": \"Нижний Новгород\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 2199.99\n    },\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    },\n    {\n        \"id\": 3,\n        \"trainId\": {\n            \"id\": 3,\n            \"name\": \"Москва-Казань\",\n            \"number\": \"026Г «Италмас (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 3,\n            \"name\": \"Казань\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 444,\n        \"totalSeats\": 960,\n        \"basePrice\": 2799.99\n    },\n    {\n        \"id\": 4,\n        \"trainId\": {\n            \"id\": 4,\n            \"name\": \"Москва — Краснодар\",\n            \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 222,\n        \"totalSeats\": 777,\n        \"basePrice\": 3799.99\n    },\n    {\n        \"id\": 5,\n        \"trainId\": {\n            \"id\": 5,\n            \"name\": \"Москва — Санкт-Петербург\",\n            \"number\": \"760А «САПСАН»\",\n            \"carCount\": 10,\n            \"seatsPerCar\": 30,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 2,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 111,\n        \"totalSeats\": 444,\n        \"basePrice\": 7799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:17:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"trainId\": {\n        \"id\": 1,\n        \"name\": \"Москва — Нижний Новгород\",\n        \"number\": \"703Ч «ЛАСТОЧКА»\",\n        \"carCount\": 16,\n        \"seatsPerCar\": 60,\n        \"trainTypeId\": {\n            \"id\": 1,\n            \"name\": \"Скоростной\"\n        }\n    },\n    \"departureCity\": {\n        \"id\": 1,\n        \"name\": \"Москва\"\n    },\n    \"arrivalCity\": {\n        \"id\": 7,\n        \"name\": \"Нижний Новгород\"\n    },\n    \"departureDate\": \"21.04.2023\",\n    \"arrivalDate\": \"22.04.2023\",\n    \"departureTime\": \"10:35\",\n    \"arrivalTime\": \"14:25\",\n    \"availableSeats\": 360,\n    \"totalSeats\": 960,\n    \"basePrice\": 2199.99\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/train_id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/train_id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"train_id",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/train_id/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/train_id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"train_id",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:18:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"trainId\": {\n            \"id\": 1,\n            \"name\": \"Москва — Нижний Новгород\",\n            \"number\": \"703Ч «ЛАСТОЧКА»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 7,\n            \"name\": \"Нижний Новгород\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 2199.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/departure_city/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/departure_city/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"departure_city",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/departure_city/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/departure_city/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"departure_city",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:19:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"trainId\": {\n            \"id\": 1,\n            \"name\": \"Москва — Нижний Новгород\",\n            \"number\": \"703Ч «ЛАСТОЧКА»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 7,\n            \"name\": \"Нижний Новгород\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 2199.99\n    },\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    },\n    {\n        \"id\": 3,\n        \"trainId\": {\n            \"id\": 3,\n            \"name\": \"Москва-Казань\",\n            \"number\": \"026Г «Италмас (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 3,\n            \"name\": \"Казань\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 444,\n        \"totalSeats\": 960,\n        \"basePrice\": 2799.99\n    },\n    {\n        \"id\": 4,\n        \"trainId\": {\n            \"id\": 4,\n            \"name\": \"Москва — Краснодар\",\n            \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 222,\n        \"totalSeats\": 777,\n        \"basePrice\": 3799.99\n    },\n    {\n        \"id\": 5,\n        \"trainId\": {\n            \"id\": 5,\n            \"name\": \"Москва — Санкт-Петербург\",\n            \"number\": \"760А «САПСАН»\",\n            \"carCount\": 10,\n            \"seatsPerCar\": 30,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 2,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 111,\n        \"totalSeats\": 444,\n        \"basePrice\": 7799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/arrival_city/4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/arrival_city/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"arrival_city",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/arrival_city/4",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/arrival_city/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"arrival_city",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:19:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/departure_date/2023-04-21",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/departure_date/2023-04-21",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"departure_date",
+								"2023-04-21"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/departure_date/2023-04-21",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/departure_date/2023-04-21",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"departure_date",
+										"2023-04-21"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:49:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"trainId\": {\n            \"id\": 1,\n            \"name\": \"Москва — Нижний Новгород\",\n            \"number\": \"703Ч «ЛАСТОЧКА»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 7,\n            \"name\": \"Нижний Новгород\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 2199.99\n    },\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    },\n    {\n        \"id\": 3,\n        \"trainId\": {\n            \"id\": 3,\n            \"name\": \"Москва-Казань\",\n            \"number\": \"026Г «Италмас (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 3,\n            \"name\": \"Казань\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 444,\n        \"totalSeats\": 960,\n        \"basePrice\": 2799.99\n    },\n    {\n        \"id\": 4,\n        \"trainId\": {\n            \"id\": 4,\n            \"name\": \"Москва — Краснодар\",\n            \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 222,\n        \"totalSeats\": 777,\n        \"basePrice\": 3799.99\n    },\n    {\n        \"id\": 5,\n        \"trainId\": {\n            \"id\": 5,\n            \"name\": \"Москва — Санкт-Петербург\",\n            \"number\": \"760А «САПСАН»\",\n            \"carCount\": 10,\n            \"seatsPerCar\": 30,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 2,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 111,\n        \"totalSeats\": 444,\n        \"basePrice\": 7799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/arrival_date/2023-04-22",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/arrival_date/2023-04-22",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"arrival_date",
+								"2023-04-22"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/arrival_date/2023-04-22",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/arrival_date/2023-04-22",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"arrival_date",
+										"2023-04-22"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 14:50:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"trainId\": {\n            \"id\": 1,\n            \"name\": \"Москва — Нижний Новгород\",\n            \"number\": \"703Ч «ЛАСТОЧКА»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 7,\n            \"name\": \"Нижний Новгород\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 2199.99\n    },\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    },\n    {\n        \"id\": 3,\n        \"trainId\": {\n            \"id\": 3,\n            \"name\": \"Москва-Казань\",\n            \"number\": \"026Г «Италмас (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 3,\n            \"name\": \"Казань\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 444,\n        \"totalSeats\": 960,\n        \"basePrice\": 2799.99\n    },\n    {\n        \"id\": 4,\n        \"trainId\": {\n            \"id\": 4,\n            \"name\": \"Москва — Краснодар\",\n            \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 222,\n        \"totalSeats\": 777,\n        \"basePrice\": 3799.99\n    },\n    {\n        \"id\": 5,\n        \"trainId\": {\n            \"id\": 5,\n            \"name\": \"Москва — Санкт-Петербург\",\n            \"number\": \"760А «САПСАН»\",\n            \"carCount\": 10,\n            \"seatsPerCar\": 30,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 2,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 111,\n        \"totalSeats\": 444,\n        \"basePrice\": 7799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/departure_time/10:35",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/departure_time/10:35",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"departure_time",
+								"10:35"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/departure_time/10:35",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/departure_time/10:35",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"departure_time",
+										"10:35"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 15:03:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"trainId\": {\n            \"id\": 1,\n            \"name\": \"Москва — Нижний Новгород\",\n            \"number\": \"703Ч «ЛАСТОЧКА»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 7,\n            \"name\": \"Нижний Новгород\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 2199.99\n    },\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    },\n    {\n        \"id\": 3,\n        \"trainId\": {\n            \"id\": 3,\n            \"name\": \"Москва-Казань\",\n            \"number\": \"026Г «Италмас (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 3,\n            \"name\": \"Казань\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 444,\n        \"totalSeats\": 960,\n        \"basePrice\": 2799.99\n    },\n    {\n        \"id\": 4,\n        \"trainId\": {\n            \"id\": 4,\n            \"name\": \"Москва — Краснодар\",\n            \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 222,\n        \"totalSeats\": 777,\n        \"basePrice\": 3799.99\n    },\n    {\n        \"id\": 5,\n        \"trainId\": {\n            \"id\": 5,\n            \"name\": \"Москва — Санкт-Петербург\",\n            \"number\": \"760А «САПСАН»\",\n            \"carCount\": 10,\n            \"seatsPerCar\": 30,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 2,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 111,\n        \"totalSeats\": 444,\n        \"basePrice\": 7799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/arrival_time/14:25",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/arrival_time/14:25",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"arrival_time",
+								"14:25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/arrival_time/14:25",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/arrival_time/14:25",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"arrival_time",
+										"14:25"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 15:03:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"trainId\": {\n            \"id\": 1,\n            \"name\": \"Москва — Нижний Новгород\",\n            \"number\": \"703Ч «ЛАСТОЧКА»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 7,\n            \"name\": \"Нижний Новгород\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 2199.99\n    },\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    },\n    {\n        \"id\": 3,\n        \"trainId\": {\n            \"id\": 3,\n            \"name\": \"Москва-Казань\",\n            \"number\": \"026Г «Италмас (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 3,\n            \"name\": \"Казань\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 444,\n        \"totalSeats\": 960,\n        \"basePrice\": 2799.99\n    },\n    {\n        \"id\": 4,\n        \"trainId\": {\n            \"id\": 4,\n            \"name\": \"Москва — Краснодар\",\n            \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 222,\n        \"totalSeats\": 777,\n        \"basePrice\": 3799.99\n    },\n    {\n        \"id\": 5,\n        \"trainId\": {\n            \"id\": 5,\n            \"name\": \"Москва — Санкт-Петербург\",\n            \"number\": \"760А «САПСАН»\",\n            \"carCount\": 10,\n            \"seatsPerCar\": 30,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 2,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 111,\n        \"totalSeats\": 444,\n        \"basePrice\": 7799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/available_seats/222",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/available_seats/222",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"available_seats",
+								"222"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/available_seats/222",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/available_seats/222",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"available_seats",
+										"222"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 15:04:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"trainId\": {\n            \"id\": 4,\n            \"name\": \"Москва — Краснодар\",\n            \"number\": \"004М «Кавказ (двухэтажный состав)»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 5,\n            \"name\": \"Краснодар\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 222,\n        \"totalSeats\": 777,\n        \"basePrice\": 3799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/total_seats/444",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/total_seats/444",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"total_seats",
+								"444"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/total_seats/444",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/total_seats/444",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"total_seats",
+										"444"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 15:05:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"trainId\": {\n            \"id\": 5,\n            \"name\": \"Москва — Санкт-Петербург\",\n            \"number\": \"760А «САПСАН»\",\n            \"carCount\": 10,\n            \"seatsPerCar\": 30,\n            \"trainTypeId\": {\n                \"id\": 1,\n                \"name\": \"Скоростной\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 2,\n            \"name\": \"Санкт-Петербург\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 111,\n        \"totalSeats\": 444,\n        \"basePrice\": 7799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/base_price/1799.99",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/base_price/1799.99",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"base_price",
+								"1799.99"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/base_price/1799.99",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/base_price/1799.99",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"base_price",
+										"1799.99"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Disposition",
+									"value": "inline;filename=f.txt"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 15:06:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"trainId\": {\n            \"id\": 2,\n            \"name\": \"Москва-Саранск\",\n            \"number\": \"042Й «Мордовия»\",\n            \"carCount\": 16,\n            \"seatsPerCar\": 60,\n            \"trainTypeId\": {\n                \"id\": 5,\n                \"name\": \"Дальнего следования\"\n            }\n        },\n        \"departureCity\": {\n            \"id\": 1,\n            \"name\": \"Москва\"\n        },\n        \"arrivalCity\": {\n            \"id\": 4,\n            \"name\": \"Саранск\"\n        },\n        \"departureDate\": \"21.04.2023\",\n        \"arrivalDate\": \"22.04.2023\",\n        \"departureTime\": \"10:35\",\n        \"arrivalTime\": \"14:25\",\n        \"availableSeats\": 360,\n        \"totalSeats\": 960,\n        \"basePrice\": 1799.99\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"trainId\": {\r\n            \"id\": 1\r\n        },\r\n        \"departureCity\": {\r\n            \"id\": 1\r\n        },\r\n        \"arrivalCity\": {\r\n            \"id\": 1\r\n        },\r\n        \"departureDate\": \"21.04.2023\",\r\n        \"arrivalDate\": \"22.04.2023\",\r\n        \"departureTime\": \"10:35\",\r\n        \"arrivalTime\": \"14:25\",\r\n        \"totalSeats\": 1,\r\n        \"availableSeats\": 1,\r\n        \"basePrice\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trips/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/6",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"trainId\": {\r\n            \"id\": 1\r\n        },\r\n        \"departureCity\": {\r\n            \"id\": 1\r\n        },\r\n        \"arrivalCity\": {\r\n            \"id\": 1\r\n        },\r\n        \"departureDate\": \"21.04.2023\",\r\n        \"arrivalDate\": \"22.04.2023\",\r\n        \"departureTime\": \"10:35\",\r\n        \"arrivalTime\": \"14:25\",\r\n        \"totalSeats\": 1,\r\n        \"availableSeats\": 1,\r\n        \"basePrice\": 1\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trips/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 15:08:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/trips/6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trips/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trips",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8080/trips/6",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trips/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trips",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Jun 2023 15:10:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
