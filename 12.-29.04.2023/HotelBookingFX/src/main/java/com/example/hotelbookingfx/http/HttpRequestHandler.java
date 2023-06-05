@@ -7,6 +7,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.*;
 import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -25,36 +27,42 @@ public class HttpRequestHandler {
 
     public void addBooking(Booking booking) {
         try {
-            URL url = new URL("http://localhost:8080/bookings/");
+            URL url = new URI("http://localhost:8080/bookings/").toURL();
             HttpURLConnection connection = openConnection(url, "POST");
             String jsonBooking = gson.toJson(booking);
             sendJsonRequest(connection, jsonBooking);
             handleResponse(connection);
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
         }
     }
 
     public List<Booking> getAllBookings() {
         try {
-            URL url = new URL("http://localhost:8080/bookings");
+            URL url = new URI("http://localhost:8080/bookings").toURL();
             HttpURLConnection connection = openConnection(url, "GET");
             String jsonResponse = getJsonResponse(connection);
             return gson.fromJson(jsonResponse, new TypeToken<List<Booking>>(){}.getType());
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
         }
         return new ArrayList<>();
     }
 
     public List<Booking> getBookingsByRoomId(int roomId) {
         try {
-            URL url = new URL("http://localhost:8080/bookings/room-id/" + roomId);
+            URL url = new URI("http://localhost:8080/bookings/room-id/" + roomId).toURL();
             HttpURLConnection connection = openConnection(url, "GET");
             String jsonResponse = getJsonResponse(connection);
             return gson.fromJson(jsonResponse, new TypeToken<List<Booking>>(){}.getType());
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
         }
         return new ArrayList<>();
     }

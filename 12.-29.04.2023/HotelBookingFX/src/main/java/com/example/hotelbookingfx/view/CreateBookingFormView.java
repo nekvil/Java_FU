@@ -50,13 +50,12 @@ public class CreateBookingFormView {
         createButton.setStyle("-fx-font-weight: bold; -fx-font-size: 14px;");
         createButton.setOnAction(e -> controller.createBooking());
 
-        // Disable the create button until all fields are filled
         createButton.disableProperty().bind(Bindings.createBooleanBinding(() ->
                         roomIdField.getText().isEmpty() ||
                                 clientIdField.getText().isEmpty() ||
                                 checkInDateField.getText().isEmpty() ||
                                 checkOutDateField.getText().isEmpty() ||
-                                totalCostField.getText().isEmpty(), // Disable if any field is empty
+                                totalCostField.getText().isEmpty(),
                 roomIdField.textProperty(),
                 clientIdField.textProperty(),
                 checkInDateField.textProperty(),
@@ -68,7 +67,7 @@ public class CreateBookingFormView {
         gridPane.setVgap(10);
         gridPane.setHgap(10);
 
-        gridPane.add(headlineLabel, 0, 0, 2, 1); // Spanning two columns
+        gridPane.add(headlineLabel, 0, 0, 2, 1);
         gridPane.add(roomIdLabel, 0, 1);
         gridPane.add(roomIdField, 1, 1);
         gridPane.add(clientIdLabel, 0, 2);

@@ -56,11 +56,11 @@ public class CreateBookingFormController {
         Double totalCost = view.getTotalCost();
 
         if (roomId <= 0) {
-            throw new IllegalArgumentException("Room ID must be a positive integer.");
+            throw new IllegalArgumentException("room_id must be a positive integer.");
         }
 
         if (clientId <= 0) {
-            throw new IllegalArgumentException("Client ID must be a positive integer.");
+            throw new IllegalArgumentException("client_id must be a positive integer.");
         }
 
         LocalDateTime checkInDate;
@@ -71,24 +71,24 @@ public class CreateBookingFormController {
             LocalDateTime currentDateTime = LocalDateTime.now();
 
             if (checkInDate.isBefore(currentDateTime)) {
-                throw new IllegalArgumentException("Check-in date must be in the future.");
+                throw new IllegalArgumentException("check_in_date must be in the future.");
             }
         } catch (DateTimeParseException e) {
-            throw new IllegalArgumentException("Invalid format for check-in date. Expected format: dd.MM.yyyy HH:mm");
+            throw new IllegalArgumentException("Invalid format for check_in_date. Expected format: dd.MM.yyyy HH:mm");
         }
 
         try {
             checkOutDate = LocalDateTime.parse(checkOutDateString, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"));
 
             if (checkOutDate.isBefore(checkInDate)) {
-                throw new IllegalArgumentException("Check-out date must be after check-in date.");
+                throw new IllegalArgumentException("check_out_date must be after check-in date.");
             }
         } catch (DateTimeParseException e) {
-            throw new IllegalArgumentException("Invalid format for check-out date. Expected format: dd.MM.yyyy HH:mm");
+            throw new IllegalArgumentException("Invalid format for check_out_date. Expected format: dd.MM.yyyy HH:mm");
         }
 
         if (totalCost <= 0) {
-            throw new IllegalArgumentException("Total cost must be a positive number.");
+            throw new IllegalArgumentException("total_cost must be a positive number.");
         }
 
         if (!checkRoomAvailability(roomId, checkInDate, checkOutDate)) {
