@@ -1,4 +1,4 @@
-package com.example.HotelBookingAPI.model;
+package com.example.CoffeeAPI.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -10,17 +10,20 @@ import java.util.Set;
 public class Menu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
 
     private String name;
-    private Integer price;
+    private Double price;
 
-    @ManyToMany(mappedBy = "additionalServiceSet")
+    @ManyToMany(mappedBy = "menuSet")
     private Set<Order> orderSet;
 
-    public void updateAdditionalService(Menu menu){
+    public void updateMenu(Menu menu){
         if(menu.name != null){
             this.name = menu.name;
+        }
+        if(menu.price != null){
+            this.price = menu.price;
         }
     }
 
